@@ -6,6 +6,7 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
+    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
     firebase: {
         apiKey: 'AIzaSyCOaixAHhpOpYw4nW1oYXLgNHlG2QRYYmU',
         authDomain: 'pwd130371.firebaseapp.com',
