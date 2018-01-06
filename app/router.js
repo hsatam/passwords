@@ -8,6 +8,7 @@ const Router = EmberRouter.extend({
 
 Router.map(function() {
   this.route('plist');
+  this.route('new-password');
 });
 
 export default Router;
