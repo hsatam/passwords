@@ -1,3 +1,19 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="Password Management" src="...">
+      </a>
+      {{#link-to 'index'}}
+        <button type="button" class="btn btn-default navbar-btn">Home</button>
+      {{/link-to}}
+      {{#link-to 'new-password'}}
+        <button type="button" class="btn btn-default navbar-btn">Add a New Password</button>
+      {{/link-to}}
+    </div>
+  </div>
+</nav>
+
 <H1>Password List Page</H1>
 
 <ul>
@@ -8,6 +24,3 @@
     <li>{{passwords.applicationURL}}</li>
   {{/each}}
 </ul>
-
-{{#link-to 'index' class="button"}}Home{{/link-to}}
-{{#link-to 'new-password' class="button"}}Add Password{{/link-to}}
