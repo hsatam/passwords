@@ -14,9 +14,9 @@ module.exports = function(environment) {
     },
     // if using ember-cli-content-security-policy
     contentSecurityPolicy: {
-        'script-src': ''self' 'unsafe-eval' apis.google.com',
-        'frame-src': ''self' https://*.firebaseapp.com',
-        'connect-src': ''self' wss://*.firebaseio.com https://*.googleapis.com'
+      'connect-src': "'self' wss://*.firebaseio.com",
+      'frame-src': "'self' https://*.firebaseio.com",
+      'script-src': "'self' 'unsafe-eval' https://*.firebaseio.com"
     },
     EmberENV: {
       FEATURES: {
