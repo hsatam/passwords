@@ -1,4 +1,13 @@
 <H1>Password List Page</H1>
 
+<ul>
+  {{#each model as |passwords|}}
+    <li>{{passwords.userId}}</li>
+    <li>{{passwords.password}}</li>
+    <li>{{passwords.applicationName}}</li>
+    <li>{{passwords.applicationURL}}</li>
+  {{/each}}
+</ul>
+
 {{#link-to 'index' class="button"}}Home{{/link-to}}
 {{#link-to 'new-password' class="button"}}Add Password{{/link-to}}
