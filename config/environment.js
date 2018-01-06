@@ -6,12 +6,17 @@ module.exports = function(environment) {
     environment,
     rootURL: '/',
     locationType: 'auto',
-    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
     firebase: {
         apiKey: 'AIzaSyCOaixAHhpOpYw4nW1oYXLgNHlG2QRYYmU',
         authDomain: 'pwd130371.firebaseapp.com',
         databaseURL: 'https://pwd130371.firebaseio.com',
         storageBucket: 'pwd130371.appspot.com',
+    },
+    // if using ember-cli-content-security-policy
+    contentSecurityPolicy: {
+        'script-src': ''self' 'unsafe-eval' apis.google.com',
+        'frame-src': ''self' https://*.firebaseapp.com',
+        'connect-src': ''self' wss://*.firebaseio.com https://*.googleapis.com'
     },
     EmberENV: {
       FEATURES: {
