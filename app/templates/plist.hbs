@@ -1,11 +1,9 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">
-        <img alt="Password Management" src="...">
-      </a>
       {{#link-to 'index'}}
-        <button type="button" class="btn btn-default navbar-btn">Home</button>
+        <button type="button" class="btn btn-default navbar-btn" aria-label="Left Align">Home</button>
+          <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
       {{/link-to}}
       {{#link-to 'new-password'}}
         <button type="button" class="btn btn-default navbar-btn">Add a New Password</button>
