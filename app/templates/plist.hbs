@@ -42,7 +42,7 @@
   </tfoot>
 
   <tbody>
-    {{#each pwd in model}}
+    {{#each passwords as |pwd|}}
       <tr>
         <td>{{pwd.userId}}</td>
         <td>{{pwd.password}}</td>
