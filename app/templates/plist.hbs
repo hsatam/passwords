@@ -66,8 +66,8 @@
 
 <ul>
   password list
-  {{#each passwords in model}}
-    <li>UserId: {{passwords.userId}}</li>
+  {{#each passwords as |navItem|}}
+    <li>UserId: {{navItem.userId}}</li>
   {{/each}}
 </ul>
 
