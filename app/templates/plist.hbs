@@ -61,8 +61,10 @@
 </table>
 
 <ul>
-  alert (model.count());
-  alert ({{passwords.count}});
+  <scritp>
+    alert (model.count());
+    alert ({{passwords.count}});
+  </scritp>
   {{#each passwords in model}}
     <li>UserId: {{passwords.userId}}</li>
   {{/each}}
