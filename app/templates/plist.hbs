@@ -66,10 +66,9 @@
 
 <ul>
   password list
-  {{#if model.isNotEmpty}}
-    <script>alert ({{Handlebars.Utils.toString(model)}})</script>
-  {{/if}}
-  {{#each passwords as |navItem|}}
+
+  {{#each passwords as |navItem index|}}
+    {{index}}
     <li>UserId: {{navItem.userId}}</li>
   {{/each}}
 </ul>
