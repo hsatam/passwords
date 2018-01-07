@@ -60,6 +60,11 @@
   </tbody>
 </table>
 
+<ul>
+  {{#each passwords as |passwords|}}
+    <li>{{passwords.userId}}</li>
+  {{/each}}
+</ul>
 
 <script>
   $(document).ready(function() {
