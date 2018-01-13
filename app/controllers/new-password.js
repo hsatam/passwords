@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import inject from '@ember/service';
 import Controller from '@ember/controller';
 
 export default Controller.extend({
@@ -8,7 +9,7 @@ store: Ember.inject.service(),
   actions: {
     createPassword: function() {
       var store = this.get('store');
-      var newPassword = this.store.createRecord('password', {
+      var newPassword = store.createRecord('password', {
         userId: this.get('userId'),
         password: this.get('password'),
         applicationName: this.get('applicationName'),
