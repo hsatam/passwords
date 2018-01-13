@@ -1,7 +1,7 @@
 import Controller from '@ember/controller';
 
 export default Controller.extend({
-  alert ('in controller header...');
+
   actions: {
     createPassword: function() {
       alert ("in controller...");
