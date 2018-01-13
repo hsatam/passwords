@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import inject from '@ember/service';
+import { inject } from '@ember/service';
 import Controller from '@ember/controller';
 
 export default Controller.extend({
