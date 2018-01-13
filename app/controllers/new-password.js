@@ -9,10 +9,10 @@ export default Controller.extend({
         userId: this.get('userId'),
         password: this.get('password'),
         applicationName: this.get('applicationName'),
-        applicationURL: this.get('applicationURL')
+        applicationURL: this.get('applicationURL'),
       });
       newPassword.save();
       this.transitionTo('plist');
-    }
-  }
+    },
+  },
 });
