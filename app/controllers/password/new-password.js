@@ -1,9 +1,10 @@
 import Controller from '@ember/controller';
 
 export default Controller.extend({
+  alert ('in controller header...');
   actions: {
-    alert ("in controller...");
     createPassword: function() {
+      alert ("in controller...");
       var newPassword = this.store.createRecord('password', {
         userId: this.get('userId'),
         password: this.get('password'),
