@@ -4,7 +4,7 @@ export default Controller.extend({
 
   actions: {
     createPassword: function() {
-      alert ("in controller...");
+      alert ('in controller...');
       var newPassword = this.store.createRecord('password', {
         userId: this.get('userId'),
         password: this.get('password'),
